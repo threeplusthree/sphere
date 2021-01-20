@@ -1,0 +1,52 @@
+div{
+  font-size: 20px;
+  text-align:center;
+}
+#vgrid{
+  display:inline-grid;
+  grid-template-rows:100px 70px;
+  border:none;
+  margin:10px;
+  width:500px;
+}
+#hgrid{
+  display:grid;
+  grid-template-columns:3fr 4fr 2fr;
+  border:none;
+  margin:0px;
+  width:inherit;
+}
+#hgrid2{
+  display:grid;
+  grid-template-columns:1fr 2fr;
+  border:none;
+  margin:0px;
+  width:inherit;
+}
+#res{
+  border:3px solid gray;
+}
+#theme{
+  border-left:3px solid gray;
+  border-top:3px solid gray;
+  border-bottom:3px solid gray;
+  border-right:none;
+}
+select{
+  border:none;
+  text-align:center;
+  font-size:inherit;
+  border-left:3px solid gray;
+  border-top:3px solid gray;
+  border-right:3px solid gray;
+}
+input{
+  border:none;
+  font-size:inherit;
+  border-top:3px solid gray;
+  border-right:3px solid gray;
+  background-color:white;
+}
+body{
+  text-align:center;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <title> 008 </title>
+  <script src='code.js'> </script>
+  <link rel='stylesheet' href='style.css'/>
+</head>
+<body class='change'>
+  <h2>구 계산기</h2>
+  <div>
+    구의 반지름, 겉넓이, 부피 가운데 하나를 입력하면 나머지 두 개를 계산하는 웹 페이지입니다.<br/>
+    왼쪽에서 입력할 값을 선택한 다음 가운데 상자에 값을 입력하고, 오른쪽 계산하기 버튼을 누르면 됩니다.<br/>
+    원주율은 3.14159로 계산합니다.
+  </div>
+  <div id='vgrid'>
+    <div id='hgrid'>
+      <select id='sel' class='change'>
+        <option>반지름</option>
+        <option>겉넓이</option>
+        <option>부피</option>
+      </select>
+      <input type='number' class='change' id='numb'/>
+      <input type='button' value='계산하기' class='change' onclick="calculate(document.getElementById('sel').value,document.getElementById('numb').value);"/>
+    </div>
+    <div id='hgrid2'>
+      <input type='button' class='change' value='테마 변경' onclick="changetheme();" id='theme'/>
+      <div id='res' class='change'>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
